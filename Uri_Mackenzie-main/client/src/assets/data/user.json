@@ -1,0 +1,7 @@
+{
+  "fullname": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "password123",
+  "isVerified": true,
+  "userType": "viewer"
+}

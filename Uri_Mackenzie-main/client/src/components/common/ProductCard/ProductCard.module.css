@@ -1,0 +1,64 @@
+.ProductCard {
+    display: flex;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    background: var(--delft-blue);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 200px;
+    height: fit-content;
+    line-height: 1.15;
+    color: var(--sunset);
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    width: 180px;
+}
+
+.ProductCard .search{
+    width: auto !important;
+}
+
+.ProductCard .search:hover{
+    transform: scale(1.025);
+}
+
+.ProductCard img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    padding: 0;
+}
+
+.ProductCard h3 {
+    padding: 0.25rem 0.5rem;
+    color: var(--sunset);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: justify;
+    text-wrap: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: -webkit-fill-available;
+}
+
+.ProductCard h4 {
+    padding: 0.25rem 0.5rem;
+    color: var(--sunset);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.ProductCard span {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+}
+
+.ProductCard button {
+    width: 100%;
+    font-size: 0.85rem;
+}

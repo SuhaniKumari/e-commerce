@@ -1,0 +1,693 @@
+/* Sidebar */
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    width: max(250px, 20%);
+    background-color: var(--delft-blue);
+}
+
+.Sidebar a {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--eggshell);
+    color: var(--delft-blue);
+    font-size: 1rem;
+    border: 0.125rem solid var(--delft-blue);
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .Sidebar {
+        display: none;
+    }
+}
+
+/* Manage Category */
+.ManageCategory {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ManageCategory>div {
+    background-color: var(--cambridge-blue);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--sunset);
+    font-weight: 400;
+    gap: 1rem;
+    width: 100%;
+}
+
+.ManageCategory>div>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ManageCategory>div>div>div {
+    width: 100%;
+    background: var(--eggshell);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--delft-blue);
+    text-transform: capitalize;
+}
+
+.ManageCategory>div>div>div>div {
+    display: flex;
+    gap: 1rem;
+}
+
+.ManageCategory>div>div>div>div button {
+    width: 100%;
+}
+
+.Product .categoryImage {
+    padding: 0 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Product .categoryImage img {
+    width: 100%;
+    border-radius: 100%;
+    border: 4px solid var(--delft-blue);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.Product .categoryImage button {
+    padding: 0 1rem;
+    font-size: 0.85rem;
+    width: fit-content;
+}
+
+.Product .categoryImage svg:hover {
+    background: var(--burnt-sienna);
+}
+
+/* Edit Product */
+.Product {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Product form label {
+    color: var(--delft-blue);
+}
+
+.Product form span {
+    color: var(--delft-blue);
+}
+
+.Product>form {
+    background-color: var(--cambridge-blue);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--sunset);
+    font-weight: 400;
+    gap: 1rem;
+    width: 100%;
+}
+
+.Product>form>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Product form div {
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.details>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.details>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cambridge-blue);
+    height: 2.5rem;
+}
+
+.details p {
+    width: 90%;
+    background-color: var(--delft-blue);
+    color: var(--sunset);
+    height: 100%;
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 6.5rem 0 0 6.5rem;
+    font-weight: 700;
+}
+
+.details>div button {
+    border-radius: 0 6.25rem 6.25rem 0;
+    width: 10%;
+    height: 100%;
+}
+
+.imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.imageSection>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imageSection h2 {
+    color: var(--sunset);
+    margin: auto;
+}
+
+.tempImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: var(--delft-blue);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.imageSection input {
+    display: none;
+}
+
+.imageContainer {
+    width: auto !important;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer>img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.imageContainer>svg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 2rem;
+    color: var(--cambridge-blue);
+    cursor: pointer;
+    background-color: var(--sunset);
+    border-radius: 100%;
+}
+
+.sizesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sizesSection>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.sizesSection>div>div {
+    display: flex;
+    border: 0.125rem solid var(--delft-blue);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.sizesSection>div>div>button {
+    border: 0;
+    border-radius: 0rem;
+    padding: 0.5rem;
+}
+
+.sizesSection p {
+    text-align: center;
+    padding: 0.25rem;
+    background-color: var(--eggshell);
+    width: 100%;
+    color: var(--delft-blue);
+    font-weight: 600;
+    border-right: 0.125rem solid var(--delft-blue);
+}
+
+.sizesSection input {
+    text-align: center;
+    padding: 0.25rem;
+    background-color: var(--eggshell);
+    width: 100%;
+    border-right: 0.125rem solid var(--delft-blue);
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+/* Manage Product */
+.ManageProduct {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.ManageProduct>div {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: var(--cambridge-blue);
+    color: var(--delft-blue);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+.ManageProduct button {
+    width: 100%;
+}
+
+.ManageProduct h1 {
+    color: var(--delft-blue);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.ManageProduct>div {
+    padding: 0.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    min-height: 100%;
+}
+
+.ManageProduct>div>div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.allProduct {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    background-color: #FFF;
+    border-radius: 1rem;
+    flex-grow: 1;
+}
+
+.singleProduct {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background: var(--cambridge-blue);
+    color: var(--delft-blue);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+    align-self: stretch;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.singleProduct:hover {
+    background-color: var(--sunset);
+    color: var(--delft-blue);
+}
+
+.singleProduct h2 {
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    max-width: 80%;
+}
+
+.singleProduct div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.singleProduct>div:nth-child(1) {
+    justify-content: space-between;
+}
+
+.singleProduct>div:nth-child(2) {
+    gap: 1rem;
+}
+
+.singleProduct h3 {
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.singleProduct h4 {
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.singleOrder {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background: var(--cambridge-blue);
+    color: var(--delft-blue);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+    align-self: stretch;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.singleOrder:hover {
+    background-color: var(--sunset);
+    color: var(--delft-blue);
+}
+
+.singleOrder h2 {
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    max-width: 80%;
+}
+
+.singleOrder div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.singleOrder>div:nth-child(1) {
+    justify-content: space-between;
+}
+
+.singleOrder>div:nth-child(2) {
+    gap: 0.5rem;
+    border: 2px solid var(--delft-blue);
+    border-radius: 6.5rem;
+    overflow: hidden;
+}
+
+.singleOrder>div:nth-child(2)>button {
+    border-radius: 0;
+    border: 0
+}
+
+/* Detail Order */
+.Order {
+    background-color: var(--sunset);
+    padding: 2rem;
+}
+
+.Order>h3 {
+    font-size: 2rem;
+    color: var(--delft-blue);
+}
+
+.DetailOrder {
+    background-color: var(--sunset);
+    padding: 2rem;
+}
+
+.DetailOrder>h3 {
+    font-size: 2rem;
+    color: var(--delft-blue);
+}
+
+.Order>div {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 2rem;
+}
+
+.DetailOrder>div {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    border: 4px solid var(--delft-blue);
+    min-height: 50vh;
+}
+
+.imagePart {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid var(--delft-blue);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    height: max-content;
+}
+
+.imagePart>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.5rem;
+}
+
+.imagePart>div:nth-child(2) {
+    border: 4px solid var(--delft-blue);
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+.imagePart>div>button {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+
+.DetailOrder ul {
+    margin-left: 1.5rem;
+}
+
+.DetailOrder li {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.DetailOrder>div h3 {
+    width: 150px;
+}
+
+.DetailOrder>div h4 {
+    width: calc(100% - 150px);
+}
+
+.DetailOrder>div>div {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.detailPart {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+/* Dashboard */
+.Dashboard {
+    padding: 1rem;
+}
+
+.Dashboard>div {
+    background-color: var(--eggshell);
+    border: 4px solid var(--delft-blue);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Dashboard .data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.Dashboard .data div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--delft-blue);
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 0.85rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.Dashboard .data h4 {
+    color: var(--sunset);
+    font-weight: 500;
+    text-align: center;
+}
+
+.Dashboard .data h2 {
+    text-align: center;
+    color: var(--eggshell);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.Dashboard .graph {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2rem;
+    gap: 0.75rem;
+    min-width: 100%;
+}
+
+.Dashboard .graph>div:nth-child(1) {
+    background-color: white;
+    border-radius: 1rem;
+    height: auto;
+    width: 100%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem;
+}
+
+.Dashboard .graph>div:nth-child(2) {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    text-align: center;
+}
+
+.Dashboard .graph span {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #2d3748;
+}
+
+@media (max-width: 768px) {
+    .Order>div {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .Order {
+        padding: 1rem;
+    }
+
+    .DetailOrder>div {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .DetailOrder>div>div {
+        flex-direction: column-reverse;
+    }
+
+    .DetailOrder {
+        padding: 1rem;
+    }
+
+    .Dashboard .data {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .Dashboard .graph {
+        flex-direction: column;
+    }
+}

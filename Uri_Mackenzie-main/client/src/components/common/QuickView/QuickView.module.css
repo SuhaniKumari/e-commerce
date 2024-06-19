@@ -1,0 +1,107 @@
+.QuickView {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80dvw;
+    background: var(--cambridge-blue);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 9px 1px var(--delft-blue);
+    z-index: 15;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid var(--sunset);
+    overflow: auto;
+    max-height: 90dvh;
+}
+
+.QuickView>button {
+    position: absolute;
+    right: 0;
+    aspect-ratio: 1;
+}
+
+.QuickView>div {
+    width: 100%;
+    color: var(--delft-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow: auto;
+}
+
+.QuickView img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: var(--delft-blue);
+}
+
+.QuickView h1 {
+    font-weight: 800;
+    color: var(--delft-blue);
+}
+
+.QuickView h2 {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.QuickView h3 {
+    font-weight: 400;
+}
+
+.QuickView ul {
+    margin-left: 2rem;
+    font-weight: 400;
+}
+
+.color {
+    padding: 1rem;
+    border-radius: 100%;
+    width: 1rem;
+}
+
+.QuickView>div>div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.size {
+    background: var(--eggshell);
+    border-radius: 100%;
+    aspect-ratio: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid var(--delft-blue);
+    color: var(--delft-blue);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.QuickView>div button {
+    margin-top: 1rem;
+}
+
+.QuickView button {
+    padding: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .QuickView {
+        flex-direction: column;
+        width: 90dvw;
+    }
+
+    .QuickView>div {
+        overflow: visible;
+    }
+
+    .QuickView::-webkit-scrollbar {
+        height: 0px;
+        width: 0px;
+    }
+}

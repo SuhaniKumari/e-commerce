@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Dashboard",
+    "link": "/admin/dashboard"
+  },
+  {
+    "title": "Add Category",
+    "link": "/admin/add-category"
+  },
+  {
+    "title": "Manage Category",
+    "link": "/admin/manage-category"
+  },
+  {
+    "title": "Add Product",
+    "link": "/admin/product"
+  },
+  {
+    "title": "Manage Products",
+    "link": "/admin/manage-products"
+  },
+  {
+    "title": "View Orders",
+    "link": "/admin/orders"
+  },
+  {
+    "title": "View Returns",
+    "link": "/admin/returns"
+  }
+]

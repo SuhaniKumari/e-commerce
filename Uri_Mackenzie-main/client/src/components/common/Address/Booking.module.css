@@ -1,0 +1,64 @@
+.AddressForm {
+    border: 4px solid var(--delft-blue);
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--delft-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    max-width: 400px;
+    background: var(--eggshell);
+    box-shadow: 0 4px 8px 4px var(--delft-blue);
+}
+
+.AddressForm>form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.AddressForm>form span {
+    color: var(--burnt-sienna);
+}
+
+.AddressTile {
+    border: 4px solid var(--delft-blue);
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    box-shadow: 0 8px 10px 4px var(--cambridge-blue);
+    background: var(--eggshell);
+}
+
+.AddressTile>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.AddressTile>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.AddressTile>div>div {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.AddressTile h3 {
+    font-size: 1rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.AddressTile h4 {
+    font-size: 1rem;
+    width: 100%;
+}

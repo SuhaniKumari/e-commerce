@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+:root {
+  --eggshell: hsla(52, 50%, 91%, 1);
+  --burnt-sienna: hsla(13, 68%, 63%, 1);
+  --delft-blue: hsla(234, 20%, 30%, 1);
+  --cambridge-blue: hsla(151, 24%, 60%, 1);
+  --sunset: hsla(37, 79%, 75%, 1);
+  overflow-x: hidden;
+}
+
+.loader {
+  width: 48px !important;
+    height: 48px !important;
+    border: 5px solid var(--delft-blue) !important;
+    border-bottom-color: transparent !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+    box-sizing: border-box !important;
+    animation: rotation 1s linear infinite !important;
+}
+
+.loaderBg {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: var(--sunset) !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 1rem;
+  flex-grow: 1;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: hsla(52, 50%, 91%, 1) #23581B;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: var(--burnt-sienna);
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: var(--burnt-sienna);
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: var(--burnt-sienna);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: var(--eggshell);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--sunset);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--eggshell);
+}
+
+.border-btn {
+  border-radius: 0.5rem;
+  border: 2px solid var(--delft-blue, hsla(234, 20%, 30%, 1));
+  color: var(--delft-blue, hsla(234, 20%, 30%, 1));
+  background: var(--eggshell, hsla(52, 50%, 91%, 1));
+}
+
+.border-btn:hover {
+  background: var(--delft-blue, hsla(234, 20%, 30%, 1));
+  color: var(--eggshell, hsla(52, 50%, 91%, 1));
+}
+
+.border-round-btn {
+  border-radius: 6.5rem;
+  border: 2px solid var(--delft-blue, hsla(234, 20%, 30%, 1));
+  color: var(--delft-blue, hsla(234, 20%, 30%, 1));
+  background: var(--eggshell, hsla(52, 50%, 91%, 1));
+}
+
+.border-round-btn:hover {
+  background: var(--delft-blue, hsla(234, 20%, 30%, 1));
+  color: var(--eggshell, hsla(52, 50%, 91%, 1));
+}
+
+.primary-btn {
+  border-radius: 0.5rem;
+  border: 0px;
+  color: var(--eggshell, hsla(52, 50%, 91%, 1));
+  background-color: var(--burnt-sienna);
+}
+
+.primary-btn:hover {
+  background-color: var(--eggshell, hsla(52, 50%, 91%, 1));
+  color: var(--burnt-sienna);
+}
+
+.primary-round-btn {
+  border-radius: 6.25rem;
+  border: 0px;
+  color: var(--eggshell, hsla(52, 50%, 91%, 1));
+  background-color: var(--burnt-sienna);
+}
+
+.primary-round-btn:hover {
+  background-color: var(--eggshell, hsla(52, 50%, 91%, 1));
+  color: var(--burnt-sienna);
+}
+
+.secondary-btn {
+  border-radius: 0.5rem;
+  border: 0px;
+  background: var(--eggshell, hsla(52, 50%, 91%, 1));
+  color: var(--burnt-sienna)
+}
+
+.secondary-btn:hover {
+  color: var(--eggshell, hsla(52, 50%, 91%, 1));
+  background-color: var(--burnt-sienna)
+}
+
+.secondary-round-btn {
+  border-radius: 6.25rem;
+  border: 0px;
+  background: var(--eggshell, hsla(52, 50%, 91%, 1));
+  color: var(--burnt-sienna)
+}
+
+.secondary-round-btn:hover {
+  color: var(--eggshell, hsla(52, 50%, 91%, 1));
+  background-color: var(--burnt-sienna)
+}
+
+button {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0.5rem 0.6rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-wrap: nowrap;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  background-color: var(--eggshell);
+  padding: 0.25rem 0.5rem;
+  color: hsla(234, 20%, 30%, 1);
+  font-size: 1rem;
+  border: 0.125rem solid var(--delft-blue);
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+textarea {
+  height: 150px;
+  text-transform: none;
+  resize: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: none;
+}
+
+form span {
+  font-size: 0.75rem;
+  color: var(--sunset);
+  font-weight: 700;
+}
+
+form label {
+  font-weight: 700;
+}
+
+form input {
+  border-radius: 1rem;
+}
+
+form button {
+  width: 100%;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}

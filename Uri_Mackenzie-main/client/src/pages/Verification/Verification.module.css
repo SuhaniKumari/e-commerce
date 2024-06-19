@@ -1,0 +1,15 @@
+.Verification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--delft-blue);
+    gap: 2rem;
+    position: relative;
+    color: var(--sunset);
+    min-height: 300px;
+    padding: 1rem;
+}
+.Verification h1{
+    text-align: center;
+}

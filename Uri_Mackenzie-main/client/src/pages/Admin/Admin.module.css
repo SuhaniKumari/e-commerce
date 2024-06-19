@@ -1,0 +1,14 @@
+.Admin {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.Outlet {
+    width: 100%;
+}
+
+.Outlet h1 {
+    color: var(--delft-blue);
+}

@@ -1,0 +1,71 @@
+{
+  "info": [
+    {
+      "icon": "store",
+      "name": "Store Near you",
+      "path": "/orders"
+    },
+    {
+      "icon": "mail",
+      "name": "@URI&MacKenzie",
+      "path": "/cart"
+    },
+    {
+      "icon": "call",
+      "name": "+91 9554522980 Mon - Sat - 11:00 am to 6:00 pm (IST)",
+      "path": "/wishlist"
+    }
+  ],
+  "aboutUs": {
+    "title": "About Us",
+    "links": [
+      {
+        "name": "Our Story",
+        "path": "https://www.facebook.com/m.afnan2018"
+      },
+      {
+        "name": "Contact Us",
+        "path": "https://www.instagram.com/m.afnan2018"
+      }
+    ],
+    "social": [
+      {
+        "icon": "",
+        "path": ""
+      },
+      {
+        "icon": "",
+        "path": ""
+      },
+      {
+        "icon": "",
+        "path": ""
+      },
+      {
+        "icon": "",
+        "path": ""
+      }
+    ]
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "links": [
+      {
+        "name": "Shipping & Returns",
+        "path": "/aboutUs"
+      },
+      {
+        "name": "FAQs",
+        "path": "/contactUs"
+      },
+      {
+        "name": "Privacy Policy",
+        "path": "/privacy"
+      },
+      {
+        "name": "Terms & Conditions",
+        "path": "/refund"
+      }
+    ]
+  }
+}

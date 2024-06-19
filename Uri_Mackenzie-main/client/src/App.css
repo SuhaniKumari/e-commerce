@@ -1,0 +1,11 @@
+.App {
+  width: 100svw;
+  min-height: 100svh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.App>:nth-child(2){
+  flex-grow: 1;
+}

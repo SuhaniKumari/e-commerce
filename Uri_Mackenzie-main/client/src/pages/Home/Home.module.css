@@ -1,0 +1,16 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+}
+
+.Home img {
+    object-fit: cover;
+    width: 100%;
+    padding: 4rem 1rem 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .Home img {
+        padding: 2rem 1rem 0 1rem;
+    }
+}
